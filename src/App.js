@@ -13,7 +13,7 @@ function App() {
     `Ala koppadi matladakunte elaa cheppu...`,
     `em chesthe nee kopam taggutundhi?? Polar bear sundae and guava sorbet konistha🙏🙏🙏`,
     `ninnu disturb chesthe it is fun... but kopam osthe kaadhu`,
-    `I'm really sorry`,
+    `I'm really really really really sorry`,
     `Please matladuuuuuu`,
   ];
 
