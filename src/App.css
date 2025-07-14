@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  margin: 0;
+  padding: 0;
+  background: #91c8f2;
+  height: 100vh;
+  width: 100vw;
+  font-family: sans-serif;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Envelope Image */
+.envelope-img {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hint Text */
+.hint-text {
+  position: absolute;
+  top: calc(50% + 120px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #333;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+
+/* Letter Card Stack */
+.letter-stack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+
+/* Base Card Style */
+.letter-card {
+  width: 400px;
+  height: 300px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+/* Only show current card */
+.hidden {
+  opacity: 0;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Tilt/offset effects */
+.page-1 {
+  transform: translate(-50%, -50%) rotate(-1.5deg) translate(1px, 1px);
+  z-index: 10;
+}
+.page-2 {
+  transform: translate(-50%, -50%) rotate(1.2deg) translate(-1px, 2px);
+  z-index: 9;
+}
+.page-3 {
+  transform: translate(-50%, -50%) rotate(-1deg) translate(2px, -1px);
+  z-index: 8;
+}
+.page-4 {
+  transform: translate(-50%, -50%) rotate(1deg) translate(-2px, 1px);
+  z-index: 7;
+}
+.page-5 {
+  transform: translate(-50%, -50%) rotate(-0.8deg) translate(1px, 2px);
+  z-index: 6;
+}
+.page-6 {
+  transform: translate(-50%, -50%) rotate(0.7deg) translate(-1px, -2px);
+  z-index: 5;
+}
+.page-7 {
+  transform: translate(-50%, -50%) rotate(-0.6deg) translate(2px, 0px);
+  z-index: 4;
+}
+.page-8 {
+  transform: translate(-50%, -50%) rotate(0.5deg) translate(-2px, -1px);
+  z-index: 3;
+}
+.page-9 {
+  transform: translate(-50%, -50%) rotate(-0.4deg) translate(1px, -2px);
+  z-index: 2;
+}
+.page-10 {
+  transform: translate(-50%, -50%) rotate(0.3deg) translate(-1px, 1px);
+  z-index: 1;
+}
+
+
+
+.letter-card-text {
+  white-space: pre-line;
+  text-align: left;         /* Text aligned to left */
   display: flex;
+  justify-content: center;  /* Center the block horizontally */
+  align-items: center;      /* Center the block vertically */
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Next Button */
+.next-btn {
+  margin-top: auto;
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: grey;
+  font-weight: normal;
 }
