@@ -11,7 +11,7 @@ function App() {
     `Last week koncham ekkuve I annoyed u...I'm soo sooryyyy`,
     `asalu last week I seriously thought ee week asalu gelakudadhu ani...still it happened😅...`,
     `Ala koppadi matladakunte elaa cheppu...`,
-    `I dont want to annoy u soo much and make u angry....I just want to annoy u a little to disturb u and get ur attention anthe...`
+    `I dont want to annoy u soo much and make u angry....I just want to annoy u a little to disturb u and get ur attention anthe...`,
     `em chesthe nee kopam taggutundhi cheppu?? Polar bear sundae and guava sorbet konistha🙏🙏🙏`,
     `ninnu disturb chesthe it is fun... but kopam osthe kaadhu(ngl..it's kinda cute when u talk while angry...but asal mataladatledhu gaa...just saying...I dont want u to be angry)`,
     `I'm really sorry`,
